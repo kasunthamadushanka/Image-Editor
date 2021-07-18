@@ -38,12 +38,13 @@ async def help(client, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [↪️start_data"),
-                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    [
+                        InlineKeyboardButton("🔃 BACK 🔃", callback_data="start_data"),
+                        InlineKeyboardButton("ℹ️ ABOUT ℹ️", callback_data="about_data"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "Updates Channel",
+                            "📣 Updates Channel 📣",
                             url="https://t.me/epusthakalaya_bots",
                         )
                     ],
@@ -64,12 +65,12 @@ async def about(client, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("BACK ↩️", callback_data="help_data"),
+                        InlineKeyboardButton("🔃 BACK 🔃", callback_data="help_data"),
                         InlineKeyboardButton("♻️ START ♻️", callback_data="start_data"),
                     ],
                     [
                         InlineKeyboardButton(
-                            "Updates Channel",
+                            "📣 Updates Channel 📣",
                             url="https://t.me/epusthakalaya_bots",
                         )
                     ],
