@@ -39,7 +39,7 @@ async def photo(client: Client, message: Message):
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="CLOSE", callback_data="close_e"),
+                        InlineKeyboardButton(text="🔒 CLOSE 🔒", callback_data="close_e"),
                     ],
                 ]
             ),
@@ -51,6 +51,6 @@ async def photo(client: Client, message: Message):
             return
         else:
             try:
-                await message.reply_text("Something went wrong!", quote=True)
+                await message.reply_text("Something went wrong! ❌", quote=True)
             except Exception:
                 return
